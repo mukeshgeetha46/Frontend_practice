@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid</title>
+</head>
+
+<style>
+    body{
+        background-color: rgb(162, 24, 226);
+    }
+
+    .container{
+        display: grid;
+
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-rows: 1fr 2fr 1fr;
+        /* grid-template-columns: repeat(3, minmax(200px, 1fr)); */
+        /* grid-template-columns: minmax(200px, 1fr) 1fr 1fr; */
+        /* grid-template-columns: repeat(4, 1fr); */
+        /* grid-template-columns: 200px 300px auto; */
+        /* column-gap: 20px;
+        row-gap: 20px; */
+        gap: 20px;
+    }
+
+    .para{
+        padding: 1rem;
+        background-color: rgb(39, 156, 211);
+        color: white;
+    }
+
+    .box{
+      background-color: rgb(94, 238, 94);
+      color: white;
+      font-size: 4rem;
+      display: grid;
+      justify-content: center
+    }
+
+    .outerbox{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin: 20px;
+      grid-auto-flow: column;
+      grid-template-rows: 100px 200px 100px;
+    }
+</style>
+
+<body>
+
+     <div class="outerbox">
+      <div class="box">1</div>
+      <div class="box">2</div>
+      <div class="box">3</div>
+      <div class="box">4</div>
+      <div class="box">5</div>
+      <div class="box">6</div>
+      <div class="box">7</div>
+      <div class="box">8</div>
+     </div>
+
+     <div class="container">
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+      <div class="para">
+         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi expedita obcaecati, molestiae labore ea maiores, optio velit ratione consequatur, provident quis unde et ipsum architecto eos molestias fuga itaque dolorum.</p>
+      </div>
+    </div>
+</body>
+</html>
